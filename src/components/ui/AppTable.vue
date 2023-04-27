@@ -19,11 +19,9 @@
                     :class="{ '-right': option.align === 'right' }"
                 >
                     <table-cell>
-                        <table-cell>
-                            <slot :name="`body-cell-${option.field}`" :row="row">
-                                {{ row[option.field] }}
-                            </slot>
-                        </table-cell>
+                        <slot :name="`body-cell-${option.field}`" :row="row">
+                            {{ getFieldValue(row, option.field) }}
+                        </slot>
                     </table-cell>
                 </td>
             </tr>
@@ -34,6 +32,10 @@
 <script lang="ts">
 import type { TableOption } from '@/common/types/TableOption';
 import TableCell from '@/components/TableCell.vue';
+
+type RowData = {
+    [key: string]: any;
+}
 
 export default {
     name: 'AppTable',
@@ -50,5 +52,14 @@ export default {
             required: true,
         },
     },
+    setup() {
+        const getFieldValue = (row: unknown, field: string): any => {
+            return (row as RowData)[field];
+        };
+
+        return {
+            getFieldValue,
+        };
+    }
 };
 </script>

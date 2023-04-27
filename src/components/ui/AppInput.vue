@@ -71,8 +71,8 @@ export default {
             return props.inputType === 'number';
         });
 
-        const updateValue = (event: InputEvent): void => {
-            const target = event.target as HTMLInputElement;
+        const updateValue = (payload: Event): void => {
+            const target = payload.target as HTMLInputElement;
             context.emit('update:modelValue', target.value);
         };
 

@@ -1,4 +1,4 @@
-import type {MinifiedCategory} from '@/services/CategoryProduct/types/MinifiedCategory';
+import type { MinifiedCategory } from '@/services/Category/types/MinifiedCategory';
 
 export interface GetMinifiedCategoriesResponse {
     [categoryId: string]: MinifiedCategory

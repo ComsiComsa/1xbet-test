@@ -1,4 +1,4 @@
-import type { MinifiedGoods} from '@/services/Category/types/MinifiedGoods';
+import type { MinifiedGoods } from '@/services/Category/types/MinifiedGoods';
 
 export type MinifiedCategory = {
     G: string;                                // Category name
