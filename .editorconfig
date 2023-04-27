@@ -1,0 +1,7 @@
+[*.{js,jsx,ts,tsx,vue}]
+# 4 space indentation
+indent_style = space
+indent_size = 4
+
+# Set default charset
+charset = utf-8

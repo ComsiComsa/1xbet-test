@@ -1,0 +1,22 @@
+.app-button {
+  background-color: $primary;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 4px;
+  outline: none;
+
+  &.-rounded {
+    border-radius: 50px;
+    padding: 0 8px;
+  }
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}

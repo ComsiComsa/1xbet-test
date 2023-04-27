@@ -1,0 +1,26 @@
+.goods-item {
+  cursor: pointer;
+  padding: 8px;
+  display: grid;
+  column-gap: 4px;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+  transition: all .2s;
+
+  &.-active {
+    background: $primary-light;
+  }
+
+  &:hover {
+    background: $orange-semilight;
+  }
+
+  &__title {
+    color: $gray-dark;
+  }
+
+  &__price {
+    font-weight: 600;
+    text-align: center;
+  }
+}

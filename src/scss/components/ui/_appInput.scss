@@ -1,0 +1,24 @@
+.app-input {
+  display: flex;
+  gap: 8px;
+  height: 24px;
+
+  &__input {
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid $gray-soft;
+  }
+
+  &__actions {
+    height: 100%;
+    align-items: center;
+  }
+
+  &__button {
+    &.-disabled {
+      background: $primary-light;
+    }
+  }
+}

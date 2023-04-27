@@ -1,0 +1,22 @@
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  & tr {
+    border-bottom: 1px solid $gray-dark-2;
+  }
+
+  & th,
+  & td {
+    padding: 4px 8px;
+    text-align: left;
+
+    &.-right {
+      text-align: right;
+    }
+  }
+
+  & th {
+    background-color: $gray-soft;
+  }
+}

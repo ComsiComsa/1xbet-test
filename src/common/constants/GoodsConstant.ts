@@ -1,0 +1,1 @@
+export const DEFAULT_UNKNOWN_GOODS_TITLE = 'Неизвестный товар';

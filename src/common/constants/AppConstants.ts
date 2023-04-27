@@ -1,0 +1,2 @@
+export const REFRESH_INTERVAL = 10 * 1000;
+export const RESET_RATE_CHANGE_CLASS_TIMEOUT = 1.5 * 1000;
